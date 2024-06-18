@@ -92,7 +92,7 @@ const DummyProto = ({workflows = []}) => {
     }
   };
 
-  const initialColumns = ['Name', 'Last Modified'];
+  const initialColumns = ['Workflow Name', 'Last Modified'];
   // const data = workflows ? workflows.map(workflow => [workflow.name, new Date(workflow.lastModified).toLocaleString()]) : [];
   // const data = workflows.filter(workflow => workflow!== null) || [];
   const data = workflows.map(workflow => [workflow.name, new Date(workflow.lastModified).toLocaleString()]);

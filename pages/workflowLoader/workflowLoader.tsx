@@ -247,6 +247,7 @@ const WorkflowLoader = ( ) => {
       };
 
 
+
       
       const iconMap = {
         'Input': inputImg, // Replace '/path/to/input_icon.svg' with actual path

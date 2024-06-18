@@ -1,3 +1,5 @@
+/* Updated CSS for a more formal look */
+
 .login_container {
 	width: 100%;
 	min-height: 100vh;
@@ -5,6 +7,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   
   .login_form_container {
@@ -34,7 +37,7 @@
   }
   
   .form_container h1 {
-	font-size: 32px;
+	font-size: 28px;
 	color: #333;
 	margin-bottom: 20px;
   }
@@ -53,7 +56,7 @@
   }
   
   .inputaa:focus {
-	border-color: #3bb19b;
+	border-color: #f0a118;
   }
   
   .error_msg {
@@ -74,7 +77,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #f8983f;
+	background-color: #e89838;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	padding: 30px;
@@ -82,7 +85,7 @@
   }
   
   .rightyea h1 {
-	font-size: 32px;
+	font-size: 28px;
 	margin-bottom: 10px;
   }
   
@@ -90,12 +93,33 @@
 	font-size: 18px;
 	margin-bottom: 20px;
   }
+
+
+.signin_btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0a118;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 15px;
+}
+
+.signin_btn:hover {
+  background-color: #f6a242;
+  transform: scale(1.05);
+}
+
   
   .white_btn,
   .green_btn {
 	border: none;
 	outline: none;
-	padding: 12px 20px;
+	padding: 10px 15px;
 	border-radius: 5px;
 	font-weight: bold;
 	font-size: 14px;
@@ -103,98 +127,52 @@
 	transition: background-color 0.3s, color 0.3s;
   }
   
+
+
   .green_btn {
-	background-color: #f8983f;
+	background-color: #f5a849;
 	color: #fff;
 	margin-top: 10px;
   }
   
   .green_btn:hover {
-	background-color: #f8983f;
+	background-color: #f0a118;
   }
   
   .white_btn {
 	background-color: #fff;
-	color: #000000;
-	border: 2px solid #f8983f;
+	color: #f0a118;
+	border: 2px solid #f0a118;
   }
   
   .white_btn:hover {
-	background-color: #ffffff;
-
+	background-color: #f0f4f8;
   }
-
-
-
-  /* .password-container {
+  
+  .password_container {
 	position: relative;
 	margin-bottom: 20px;
+	width: 100%;
+	max-width: 400px;
   }
   
   .show-password {
-	position: absolute;
-	top: 50%;
-	
-	transform: translateY(-50%);
-	height: 16px;
-	width: 16px;
+	display: block;
+	margin-top: 10px;
 	cursor: pointer;
   }
   
   .show-password-label {
-	position: absolute;
-	top: 50%;
-
-	transform: translateY(-50%);
 	font-size: 12px;
 	color: #7f7f7f;
 	cursor: pointer;
   }
-   */
-
-   .password-container {
-	position: relative;
-	margin-bottom: 20px;
-  }
   
   .inputaa {
-	margin-left: 2%;
-	width: 90%;
+	margin-left: 0;
+	width: 100%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
   }
-  
-  .show-password {
-	position: absolute;
-	top: 100%;
-	right: 10px;
-	margin-top: 10px;
-	height: 16px;
-	width: 16px;
-	cursor: pointer;
-  }
-  
-  .show-password-label {
-	position: absolute;
-	top: 100%;
-	right: 32px;
-	margin-top: 10px;
-	font-size: 12px;
-	color: #7f7f7f;
-	cursor: pointer;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
   

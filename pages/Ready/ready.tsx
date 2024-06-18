@@ -32,6 +32,7 @@ import ComprehendFindings from '../../components/sidebars/ComprehendFindings';
 import UpdateEHR from '../../components/sidebars/UpdateEHR';
 import Link from 'next/link';
 import useSessionData from '../../hooks/useSessionData';
+import AskAI from '../../components/sidebars/AskAI';
 // import 'tailwindcss/tailwind.css';
 
 // import { SessionProvider } from 'next-auth/react';
@@ -74,7 +75,7 @@ const Sidebarz: React.FC<SidebarProps> = ({ onClose, onSelectItem }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const categories: Record<string, string[]> =  {
-    All: ['Record patient audio', 'Transcribe audio recording', 'Comprehend findings', 'Update EHR / EMR', 'Tranform Text', 'Translate Text with AI', 'Format Output', 'Extract Info from Text', 'Generate Text'],
+    All: [ 'Ask AI','Record patient audio', 'Transcribe audio recording', 'Comprehend findings', 'Update EHR / EMR', 'Tranform Text', 'Translate Text with AI', 'Format Output', 'Extract Info from Text', 'Generate Text'],
     Text: ['Tranform Text', 'Translate Text with AI', 'Format Output', 'Extract Info from Text', 'Generate Text'],
     Integrations: ['Epic Systems', 'Cerner', 'Alscripts', 'Meditech', 'NextGen', 'GE Healthcare', 'Athenahealth', 'Allscripts', 'eClinicalWorks', 'Practice Fusion'],
     Research: ['Item 10', 'Item 11', 'Item 12'],
@@ -279,6 +280,8 @@ const Ready = ( ) => {
             return <ComprehendFindings onClose={() => setEditBox(null)} />;
           case 'Update EHR / EMR':
             return <UpdateEHR onClose={() => setEditBox(null)} />;
+          case 'Ask AI':
+            return <AskAI onClose={() => setEditBox(null)} />;
           // Add cases for other actions
           default:
             return null;
@@ -363,7 +366,7 @@ const Ready = ( ) => {
               
 
                    <button className="saveas-button" onClick={handleSave}>
-                       Save As
+                       Quick Save
                    </button>
                </nav>
             </div> 

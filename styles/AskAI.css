@@ -1,0 +1,101 @@
+/* Sidebar.css */
+
+.sidebarai {
+    width: 370px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #dcdcdc;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    height: 100vh;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000; /* Ensure it is on top */
+    overflow-y: auto; /* Make sidebar scrollable */
+}
+
+
+.closenow {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.close-button {
+    width: 24px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.sidebar-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.setting-item {
+    margin-bottom: 20px;
+}
+
+.setting-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.setting-value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.model-select,
+.words-characters-select,
+.length-input,
+.large-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.large-input {
+    height: 80px;
+}
+
+/* input[type="range"] {
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #555;
+    border-radius: 50%;
+    cursor: pointer;
+} */

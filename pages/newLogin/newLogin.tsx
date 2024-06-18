@@ -27,6 +27,7 @@ const Login = () => {
       router.push("../DummyProto/DummyProto");
     };
 
+
   return (
     <div className={styles.login_container}>
       <div className={styles.login_form_container}>
@@ -72,7 +73,7 @@ const Login = () => {
             </div>
             
             {error && <div className={styles.input}>{error}</div>}
-            <button type="submit" className={styles.inputaa}>
+            <button type="submit" className={styles.signin_btn}>
               Sign In
             </button>
           </form>

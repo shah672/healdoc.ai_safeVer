@@ -9,14 +9,22 @@ interface ComprehendFindingsProps {
 }
 
 const AImodels = [
+  'Anthropic - Claude 3 Opus (New)',
+  'Anthropic - Claude 3.0 Sonnet (New)',
+  'Anthropic - Claude 3 Haiku (new)',
+  'Anthropic - Claude Claude 2.0',
+  'Anthropic - Claude Claude 2.1',
+  'GPT-4.0 (new)',
   'OpenAI',
   'GPT-4 32k',
   'GPT-4 Turbo',
   'GPT-3.5',
-  'Anthropic',
   'Claude 2.0',
   'Claude 2.1'
 ];
+
+
+
 
 
 const ComprehendFindings: React.FC<ComprehendFindingsProps> = ({ onClose }) => {

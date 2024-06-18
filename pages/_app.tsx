@@ -5,6 +5,8 @@ import '../styles/ready.css';
 import '../styles/TranscribeAudio.css';
 import '../styles/ComprehendFindings.css';
 import '../styles/workflowLoader.css'
+import '../styles/AskAI.css';
+
 
 
 import type { AppProps } from "next/app";

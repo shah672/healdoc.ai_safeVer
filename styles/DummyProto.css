@@ -437,7 +437,7 @@
 
 /* table */
 
-.table-container {
+ /* .table-container {
 	margin-left: 18rem; 
 	margin-right: 2%; 
 }
@@ -445,6 +445,148 @@
   .tableWrapper {
 	overflow-x: auto; 
   }
+    */
+
+
+
+	.table-container {
+		margin-left: 19.5rem; 
+		margin-right: 0.5%; 
+		padding: 20px;
+		background-color: #f9f9f9;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		height: 500px;
+	  }
+	  
+	  .table-wrapper {
+		overflow-x: auto; 
+	  }
+	  
+	  .table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 20px 0;
+		font-size: 16px;
+		text-align: left;
+	  }
+	  
+	  .table th, .table td {
+		padding: 12px 15px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		font-size: 14px;
+		text-align: left;
+	  }
+	  
+	  .table th {
+		background-color: #f0f4f8;
+		color: #333;
+		font-weight: 600;
+		text-transform: uppercase;
+	  }
+	  
+	  .table td {
+		background-color: #ffffff;
+	  }
+	  
+	  /* Add hover effect for rows */
+	  .table tr:hover {
+		background-color: #eea264; /* Change to desired hover color */
+		cursor: pointer; /* Change cursor to pointer */
+		text-decoration: underline; /* Add underline to mimic hyperlink */
+	  }
+	  
+	  
+	  /* .table tbody tr:hover {
+		background-color: #f1f1f1;
+	  }
+	  
+	  .table tbody tr:nth-child(even) {
+		background-color: #f9f9f9;
+	  } 
+
+	  
+	  
+	  .table th .top-header, .table th .bottom-header {
+		padding: 8px 0;
+		text-align: center;
+	  } */
+
+
+
+	  /* .table-container {
+		margin-left: 19.5rem;
+		margin-right: 0.5%;
+		padding: 20px;
+		background-color: #f9f9f9;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		height: 500px;
+	}
+	
+	.table-wrapper {
+		overflow-x: auto;
+	}
+	
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 20px 0;
+		font-size: 16px;
+		text-align: left;
+	}
+	
+	.table th,
+	.table td {
+		padding: 12px 15px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		font-size: 14px;
+		text-align: left;
+	}
+	
+	.table th {
+		background-color: #f0f4f8;
+		color: #333;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	
+	.table td {
+		background-color: #ffffff;
+	}
+	
+	.table tbody tr {
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	
+	.table tbody tr:hover {
+		background-color: #f1f1f1;
+	}
+	
+	.table tbody tr a {
+		display: block;
+		padding: 12px 15px; 
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	.table tbody tr a:hover {
+		background-color: #e0e0e0; 
+		text-decoration: none; 
+		color: #333; 
+	}
+	
+	/* Adjustments for top and bottom headers 
+	.table th .top-header,
+	.table th .bottom-header {
+		padding: 8px 0;
+		text-align: center;
+	} */
+	
+	  
   
 
 
