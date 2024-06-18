@@ -1,0 +1,652 @@
+.design {
+	background: linear-gradient(45deg,#ef7a0b,#f59d33);
+	   
+	animation: color 20s ease-in-out infinite; 
+  }
+  
+  
+  @keyframes color {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  }
+
+.summary {
+	font-size: 45px;
+	text-align: center;
+    letter-spacing: normal;
+    font-family: "dubai", sans-serif;
+}
+
+
+.textt {
+	padding-top: 1.5%;
+	text-align: center;
+	font-size: 30px;
+	font-family: "dubai", sans-serif;
+}
+
+
+.headding {
+	padding-left: 8%;
+	padding-top: 1%;
+	text-align: center;
+	font-size:  3rem;
+	font-weight: 400;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10%;
+	padding-left: 15%;
+}
+
+.row_update {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.firstNavDiv {
+	height: 20%;
+  }
+  
+  
+  .fixedNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: fixed;
+	height: 50x;
+	top: 0;
+	left: 0; /* Adjust this value to match the width of your sidebar */
+	right: 0; /* Ensures the navbar stretches to the end of the viewport */
+	/* z-index: 10; */
+  }
+  
+  
+  .nav-section {
+	display: flex;
+	align-items: center;
+  }
+  
+  .start-section {
+	padding-left: 17rem;
+	justify-content: flex-start;
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 20px;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .all_workflows {
+	display: flex;
+	align-items: center;
+	padding-left: 17rem;
+	justify-content: flex-start;
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 20px;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .nav-button {
+	padding: 0.5rem 0.5rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .nav-button:hover {
+	color: #fdaa69; /* Light orange color; adjust the hex code as needed */
+	text-decoration: underline;
+  }
+
+  .end-section {
+	display: flex;
+	color: #eb9748;
+	align-items: center;
+  }
+
+
+  .button {
+	position: relative;
+	overflow: hidden;
+	height: 3rem;
+	padding: 0 2rem;
+	border-radius: 0.5rem;
+	background: #faa759;
+	background-size: 400%;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .button:hover::before {
+	transform: scaleX(1);
+  }
+  
+  .button-content {
+	position: relative;
+	z-index: 1;
+  }
+  
+  .button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	width: 100%;
+	height: inherit;
+	border-radius: inherit;
+	background: linear-gradient(
+	  82.3deg,
+	  rgb(244, 147, 77) 10.8%,
+	  rgb(239, 137, 11) 94.3%
+	);
+	transition: all 0.475s;
+  }
+  
+
+
+  .secondNavDiv {
+	height: 40%;
+  }
+  
+  
+  .fixedNav1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: fixed;
+	height: 50x;
+	top: 80px;
+	left: 0; /* Adjust this value to match the width of your sidebar */
+	right: 0; /* Ensures the navbar stretches to the end of the viewport */
+	/* z-index: 10; */
+  }
+  
+  
+  .nav-section {
+	display: flex;
+	align-items: center;
+  }
+  
+  .start-section1 {
+	padding-left: 15rem;
+	justify-content: flex-start;
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 20px;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  
+  .nav-button {
+	padding: 0.5rem 0.5rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .nav-button:hover {
+	color: #fdaa69; /* Light orange color; adjust the hex code as needed */
+	text-decoration: underline;
+  }
+
+  .end-section1 {
+	display: flex;
+	color: #eb9748;
+	align-items: center;
+  }
+
+
+
+  .secondNavDiv {
+	height: 20%;
+  }
+
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	height: 50x;
+	top: 0;
+	left: 20px; /* Adjust this value to match the width of your sidebar */
+	right: 0;
+  }
+
+
+  .fixedNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: fixed;
+	height: 50x;
+	top: 0;
+	left: 0; /* Adjust this value to match the width of your sidebar */
+	right: 0; /* Ensures the navbar stretches to the end of the viewport */
+	/* z-index: 10; */
+  }
+
+
+
+
+
+
+
+  
+  .navbar button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	border: none;
+	background-color: transparent;
+	color: #4a5568;
+	cursor: pointer;
+	transition: color 0.3s ease;
+  }
+  
+  .navbar button:hover {
+	color: #805ad5;
+  }
+  
+  .navbar button svg {
+	width: 24px;
+	height: 24px;
+  }
+  
+  .navbar button span {
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 4px;
+  }
+
+
+
+  /* .firstNavDiv1 {
+  }
+  
+  
+  .fixedNav1 {
+	display: flex;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	top: 80px;
+  } */
+
+
+
+  .start-section1 {
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 15px;
+	color:#eb9748;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+
+
+
+  .middle-section1 {
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 15px;
+	color:#eb9748;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+
+
+.firstNavDiv1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure the nav bar spans the whole width */
+    align-items: center;
+	padding-left: 20%;
+}
+
+
+.fixedNav1 {
+	display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure the nav bar spans the whole width */
+    align-items: center;
+	padding-left: 20%;
+}
+
+.nav2container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+}
+
+.browse-container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+	justify-content: flex-start;
+}
+
+.recommendedButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: none; /* Remove any fill colors */
+    border: none;
+    color: #131516; /* Set a default color for the text */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
+}
+
+
+.recentButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: none; /* Remove any fill colors */
+    border: none;
+    color: #131516; /* Set a default color for the text */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
+}
+
+.recommendedButton::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #f79a37; /* Hot pink color */
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #f8a047;
+}
+
+.recommendedButton:hover::after {
+    width: 100%;
+    left: 0; /* Reset left to 0 to fill the entire bottom */
+}
+
+.recommended.active, .recent.active {
+    color: #131516; /* Darker shade when active */
+}
+
+.browseButton {
+	padding: 10px 25px; /* Adjust padding as needed */
+	border: 1px solid #ccc; /* Add border */
+	border-radius: 5px; /* Add border radius for rounded corners */
+	background-color: transparent; /* Set background color */
+	color: #333; /* Set text color */
+	font-size: 16px; /* Set font size */
+  }
+
+
+.icon {
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+
+
+
+
+
+/* table */
+
+.table-container {
+	margin-left: 18rem; 
+	margin-right: 2%; 
+}
+  
+  .tableWrapper {
+	overflow-x: auto; 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 768px) { /* Tailwind's default sm breakpoint */
+
+	.firstNavDiv {
+		height: 10%;
+		overflow-x: auto; 
+	}
+  
+  
+  .fixedNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	height: 70px;
+	top: 0;
+	left: 0; /* Adjust this value to match the width of your sidebar */
+	right: 0; /* Ensures the navbar stretches to the end of the viewport */
+	/* z-index: 10; */
+	overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  
+  .nav-section {
+	display: flex;
+  }
+  
+  .start-section {
+	padding-left: 1rem;
+	justify-content: flex-start;
+	color: #000000;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 20px;
+	font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  
+  .nav-button {
+	padding: 0.5rem 0.5rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .nav-button:hover {
+	color: #fdaa69; /* Light orange color; adjust the hex code as needed */
+	text-decoration: underline;
+}
+
+
+
+
+
+  .firstNavDiv1 {
+    display: flex;
+    width: 100%; /* Ensure the nav bar spans the whole width */
+	overflow-x: auto; 
+}
+
+
+
+
+  .fixedNav1 {
+	display: flex;
+	padding: 15px 20px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: fixed;
+	height: 90px;
+	top: 70.1px;
+	left: 0; 
+	right: 0; 
+	overflow-x: auto; 
+	/* z-index: 10; */
+	
+  }
+  
+  
+  .nav-section {
+	display: flex;
+  }
+
+  .button2-container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+	justify-content: flex-start;
+}
+
+.button2 {
+
+    border-radius: 5px;
+    background: none; /* Remove any fill colors */
+    border: none;
+    color: #131516; /* Set a default color for the text */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
+}
+
+
+.recommendedButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: none; /* Remove any fill colors */
+    border: none;
+    color: #131516; /* Set a default color for the text */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
+}
+
+
+.recentButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: none; /* Remove any fill colors */
+    border: none;
+    color: #131516; /* Set a default color for the text */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element does not extend outside the button */
+}
+
+.browseButton {
+	padding-left: 10%;
+	padding: 5px 10px; /* Adjust padding as needed */
+	border: 1px solid #ccc; /* Add border */
+	border-radius: 5px; /* Add border radius for rounded corners */
+	background-color: transparent; /* Set background color */
+	color: #333; /* Set text color */
+	font-size: 12px; /* Set font size */
+  }
+
+  .browse-container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+	justify-content: flex-start;
+}
+
+
+
+.browse {
+    color: black; /* Text color for the browse button */
+    border: 1px solid #deddf0; /* Stylish border */
+	align-items: none;
+}
+
+.icon {
+    font-size: 2rem; /* Adjust icon size */
+}
+
+.table-container {
+  margin-left: 2%; /* Adjust margin as needed */
+  margin-right: 2%; /* Adjust margin as needed */
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%; /* Ensure table wrapper does not exceed viewport width */
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

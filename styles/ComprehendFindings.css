@@ -1,0 +1,107 @@
+.sidebarComp {
+  width: 370px;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .closeButtonContainer {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+  
+  .closeButtonContainer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    appearance: none;
+  }
+  
+  .closeButtonContainer svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  .sidebarComp h2 {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sidebarComp p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+
+  .selectContainerComp {
+    margin-bottom: 20px;
+  }
+  
+  .selectLabelComp {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .selectBoxComp {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%23333' d='M7.247 10.95l4.792-4.793a1 1 0 0 1 1.414 0l1.414 1.414L11.414 9.414a1 1 0 0 1-1.414 1.414L7.247 12.56a1 1 0 0 1-1.414 0 1 1 0 0 1 0-1.414z'/></svg>"); */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
+  
+  .selectBoxComp:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #fcb04c;
+  }
+  
+  .selectBoxComp option {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

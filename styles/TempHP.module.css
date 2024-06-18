@@ -1,0 +1,568 @@
+.container {
+    position: relative;   
+    height: 100vh;
+    width: 100%; 
+}
+
+.topRightButton {
+
+  /* Adjust top position as needed */
+   /* Adjust right position as needed */
+}
+
+/* .topRightButton button {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 40px; 
+  padding: 10px 20px;
+  font-size: 22px;
+  font-family: Arial;
+  border-color: black;
+} */
+
+
+/*new navbar css*/
+/* YourStylesheetName.module.css */
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;  /* Ensures the logo stays on top */
+}
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;  /* Aligns children to each side */
+  align-items: center;
+  padding: 0 20px;  /* Adds padding on both sides */
+  background-color: #FFFFFF;
+  height: 80px;
+  transition: background-color 3s;
+}
+
+.fixedNav.black {
+  background-color: #f5f3f3;
+}
+
+.fixedNav.black .blacktext,
+.fixedNav.black button span {
+ /* color: white;   Changes text color to white when navbar is black */
+}
+
+
+
+.firstSection {
+  /* Apply animation styles to the first section */
+  text-align: center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  animation: bg-scrolling-reverse 4s infinite;
+  animation-timing-function: linear;
+}
+
+.firstSection::before {
+
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes bg-scrolling-reverse {
+  100% { background-position: 50px 50px; }
+}
+
+
+
+
+.wordOS {
+  color: black
+}
+
+.wordHealth {
+  color: #F28C28;
+}
+
+.orangetext {
+  color: #F28C28; /* Style for orange text */
+}
+
+
+
+
+.logo h2 {
+  font-size:30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding-left: 17%;
+    font-weight: 60;
+    font-family: Arial;
+    color: black;
+   
+}
+
+.content h2 {
+  display: flex;
+  padding-top: 10px;
+  font-size: 22px; 
+  font-family: 'dubai';
+  text-align: center;
+}
+
+.blacktext {
+  color: black;
+}
+
+.whiteText{
+  color: white;
+}
+
+.iconContainer {
+  position: absolute;
+  padding-left: 20px;
+  padding-bottom: 22px;
+  bottom: 0.5rem;
+  left: 0;
+}
+
+/* .iconContainer {
+   display: flex;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    bottom: 0.5rem;
+    left: 0;
+  } */
+  
+  /* .textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.3rem;
+    gap: 0.01rem;
+    position: absolute;
+    font-family: Dubai;
+    left: 40px;
+    bottom: 36%;
+  }
+   */
+
+
+   .textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.3rem;
+    gap: 0.01rem;
+    padding-bottom: -3px;
+    position: absolute;
+    bottom: 2.1rem;
+    font-family: Dubai;
+    left: 40px; /* Adjust as needed */
+  }
+
+
+
+
+  .text-xs {
+    font-size: 10px; /* Adjust as needed */
+}
+
+/* .globeContainer {
+
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    bottom: 36%;
+}
+
+.centreContainer {
+  text-align: center;
+  padding-top: 50px;
+  padding-top: 50px;
+  color: #a9a5a1;
+} */
+
+
+.globeContainer {
+
+  position: absolute;
+  bottom: 1.3rem;
+  right: 0;
+  padding-right: 20px;
+}
+
+.centreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 17rem;
+  padding-left: 0.75rem;
+}
+
+
+
+.getStarted {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.healthO {
+  padding-top: 20%;
+    text-align: center;
+    font-size: 84px;
+    font-family:"Sharp Sans No.1", sans-serif;
+    font-weight: 400;
+}
+
+
+.buttonz {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.buttonz h2 {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonz:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.buttonz:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #f8c28b;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.buttonz:hover {
+  color: #ffffff;
+  border: 1px solid #f8c28b;
+}
+
+.buttonz:hover:before {
+  top: -35%;
+  background-color: #f8c28b;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.buttonz:hover:after {
+  top: -45%;
+  background-color: #f8c28b;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+
+.buttong {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.buttong h2 {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttong:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.buttong:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #f8c28b;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.buttong:hover {
+  color: #ffffff;
+  border: 1px solid #f8c28b;
+}
+
+.buttong:hover:before {
+  top: -35%;
+  background-color: #f8c28b;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.buttong:hover:after {
+  top: -45%;
+  background-color: #f8c28b;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+
+
+
+
+/* backup HeathOS #b37130 */
+
+@media (max-width: 768px) {
+
+
+  .logo h2 {
+    font-size:25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .buttong {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #4f4f4f;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+  }
+  
+  .buttong h2 {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  .fixedNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;  /* Aligns children to each side */
+    align-items: center;
+    padding: 0 20px;  /* Adds padding on both sides */
+    background-color: #FFFFFF;
+    height: 80px;
+    transition: background-color 3s;
+  }
+
+
+.healthO {
+    padding-top: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-family:"Sharp Sans No.1", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    
+}
+
+.wordOS {
+  color: black;
+  font-size: 30px;
+}
+
+
+.wordHealth {
+  color: #F28C28;
+}
+
+.wordHealth, .wordOS {
+  display: block;
+}
+
+
+
+.orangetext {
+  color: #F28C28; /* Style for orange text */
+}
+
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+  align-items: center;
+  font-weight: 60;
+  font-family: Arial;
+  color: black;
+  margin-top: 0px;
+  padding-left: 4.1rem; 
+}
+
+.content h2 {
+  font-size: 12.5px;
+  padding: 0;
+}
+
+
+.buttonz {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.buttonz h2 {
+  font-size: 10px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+  
+  .iconContainer {
+      display: flex;
+      padding-left: 1rem; 
+      padding-bottom: 1px;
+      bottom: 1rem; 
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 1.3rem;
+    margin-left: 8vw; 
+    text-align: left; 
+  }
+
+  
+  .globeContainer {
+      display: flex;
+      position: absolute;
+      bottom: 1.3rem;
+      right: 0;
+  }
+  
+  .getStarted {
+      font-size: 16px;
+  }
+  
+  .centreContainer {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 17rem;
+    padding-left: 0.75rem
+  }
+
+  .text-xs {
+    font-size: 5px; /* Adjust as needed */
+}
+
+  /* Custom CSS to make the button smaller */
+.custom button {
+  display: flex;
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

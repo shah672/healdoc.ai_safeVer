@@ -1,0 +1,165 @@
+.sidebar5 {
+  width: 370px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.vocabTable {
+  margin-bottom: 20px;
+}
+
+.tableHeader,
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableCell {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.tableCell input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input {
+  font-size: 14px;
+  color: #333;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.addRowButton,
+.saveButton,
+.closeButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addRowButton {
+  background-color: #fcb04c;
+  color: white;
+}
+
+.addRowButton:hover {
+  background-color: #fca12c;
+}
+
+.saveButton {
+  background-color: #fcb04c;;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #fca12c;
+}
+
+.closeButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.selectContainer {
+  margin-bottom: 20px;
+}
+
+.selectLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.selectBox {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.selectBox:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #fcb04c;
+}
+
+.selectBox option {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.topRight {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bottomRight {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  appearance: none;
+}
+
+.closeButton svg {
+  width: 24px;
+  height: 24px;
+  stroke: #333;
+  transition: stroke 0.3s ease;
+}
+
+.closeButton:hover svg {
+  stroke: #f44336;
+}

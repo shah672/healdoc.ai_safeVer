@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "public",
+			"path": "../healdoc.ai_latest/public"
+		},
+		{
+			"name": "healdoc.ai_version_2",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

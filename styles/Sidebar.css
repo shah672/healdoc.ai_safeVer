@@ -1,0 +1,218 @@
+.sidebar_open {
+    /* Adjust width as needed */
+    width: 255px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+  }
+  
+  .sidebar_open.open {
+    display: block;
+    width: 250px;
+  }
+  
+
+  .sidebar_open .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #4a5568;
+    cursor: pointer;
+  }
+  
+
+  .sidebar_open .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  .sidebar_open .section {
+    margin-bottom: 3rem;
+  }
+  
+  .sidebar_open .section h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar_open .section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar_open .section ul li {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .sidebar_open .section ul li span {
+    margin-right: auto;
+  }
+  
+  .sidebar_open .section ul li .badge {
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .sidebar_open .section ul li .badge.new {
+    background-color: #f87171;
+  }
+
+
+  .upgrade-button {
+    background-color: #FF7F50; /* Coral orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between text and icon */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
+    transition: all 0.3s;
+}
+
+.upgrade-button:hover {
+    background-color: #FF4500; /* Darker orange when hovered */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Slightly deeper shadow on hover */
+}
+
+.upgrade-button i {
+    color: inherit; /* Icon color matches the text color */
+    margin-top: 40px;
+}
+
+.sidebar-divider {
+  border-top: 1px solid #000000 !important;
+  margin-top: 40px; /* Adjust the margin to create space between the line and the content above */
+}
+
+.upgrade-section {
+  margin-top: 40px; /* Adjust the margin to create space between the line and the button */
+}
+
+
+
+
+
+
+
+
+/* css responsive */
+.card {
+  min-width: 0;
+  max-width: 100%;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 0.5rem;
+}
+
+.card-padding {
+  padding: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #fed7aa;
+  color: #ea580c;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  margin-right: 0.25rem;
+}
+
+.trythisbutton {
+  background-color: #f97316;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #ea580c;
+}
+
+.text-gray-700 {
+  color: #4b5563;
+}
+
+/* CardRow.css */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px; /* Adjust margin as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .sidebar_open {
+      display: none;
+      /* display: block;
+      display: hidden;
+      width: 0; */
+    }
+
+    .sidebar {
+      display: none;
+      /* width: 0.1rem; 
+      display: hidden; */
+    }
+
+    .sidebar_open.open {
+      width: 0.1rem; /* Adjust the width as needed */
+      display: hidden;
+    }
+  }
+  
