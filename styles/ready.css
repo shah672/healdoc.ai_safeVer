@@ -550,6 +550,7 @@
     flex: 1;
     overflow-y: auto;
     padding: 10px;
+    color: #000;
   }
   
   .categories7 div, .subitems7 div {
@@ -610,7 +611,7 @@
   }
   
   .workflows-css .icon-button:hover {
-    color: #007bff;
+    color: #000;
   }
   
   .custom-heading3 {

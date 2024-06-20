@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
- import styles from "../../styles/newLogin.module.css";
+ import styles from "./newLogin.module.css";
 
 const Login = () => {
   const [error, setError] = useState<string>("");

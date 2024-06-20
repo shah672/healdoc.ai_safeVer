@@ -53,10 +53,12 @@
 	margin: 10px 0;
 	font-size: 16px;
 	transition: border-color 0.3s;
+	color: #000;
   }
   
   .inputaa:focus {
 	border-color: #f0a118;
+	color: #000;
   }
   
   .error_msg {

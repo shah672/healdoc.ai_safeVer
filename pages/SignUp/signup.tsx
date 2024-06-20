@@ -106,7 +106,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import styles from '../../styles/signup.module.css'; // Import your CSS module
+import styles from './styles/signup.module.css'; // Import your CSS module
+
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -163,7 +164,7 @@ const Signup = () => {
               onChange={handleChange}
               value={data.name}
               required
-              className={styles.input}
+              className={styles.inputsign}
             />
             <input
               type="text"
@@ -172,7 +173,7 @@ const Signup = () => {
               onChange={handleChange}
               value={data.email}
               required
-              className={styles.input}
+              className={styles.inputsign}
             />
             <div className={styles.passwordContainer}>
               <input
@@ -182,7 +183,7 @@ const Signup = () => {
                 onChange={handleChange}
                 value={data.password}
                 required
-                className={styles.input}
+                className={styles.inputsign}
               />
               <input
                 type="checkbox"
