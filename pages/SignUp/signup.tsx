@@ -106,7 +106,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import styles from './styles/signup.module.css'; // Import your CSS module
+import styles from './signup.module.css'; // Import your CSS module
 
 
 const Signup = () => {
