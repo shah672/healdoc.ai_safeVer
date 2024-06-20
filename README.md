@@ -1,10 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Healdoc.ai webapp:
+
+## Installation
+To get started with this project, clone the repository and install the dependencies using npm or yarn:
+
+# Clone the repository
+git clone: https://github.com/shah672/healdoc.ai.git
+
+# Install dependencies
+npm install
 
 ## Getting Started
 
 First, run the development server:
-
-```bash
 npm run dev
 # or
 yarn dev
