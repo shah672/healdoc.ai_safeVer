@@ -10,6 +10,10 @@
     top: 0;
 
   }
+
+  .icon_colorz {
+    color: #000;
+  }
   
   .sidebar_open.open {
     display: block;
@@ -30,6 +34,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 3rem;
+    color: #4a5568;
   }
   
   .sidebar_open .section {

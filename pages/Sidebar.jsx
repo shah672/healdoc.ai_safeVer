@@ -21,7 +21,7 @@ export default function Sidebar({ children }) {
     <aside className="sidebar lg:w-64 md:w-32 w-50 l-100 fixed top-0 h-full left-0 z-1 transition-all transform ${expanded ? '' : '-translate-x-full'}">
       <nav className="  h-full flex flex-col bg-white border-r shadow-sm transition-all transform ${expanded ? '' : '-translate-x-full'}">
         <div className="p-4 pb-2 flex justify-between items-center">
-            <h2 className="font-bold text-xl">{sessions?.user?.name}&apos;s Workspace</h2>       
+            <h2 className="font-bold text-xl text-black">{sessions?.user?.name}&apos;s Workspace</h2>       
             {/* <h2 className="font-bold text-xl">Workspace</h2>     */}
           <button
             onClick={() => setExpanded((curr) => !curr)}
@@ -133,7 +133,7 @@ export function SidebarLeft() {
         <h3>Teamspaces</h3>
         <ul>
           <li>
-            <FaHome className="mr-4" />
+            <FaHome className="icon_colorz mr-4" />
             <span>Home</span>
           </li>
           <li>

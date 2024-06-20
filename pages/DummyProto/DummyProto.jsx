@@ -100,7 +100,7 @@ const DummyProto = ({workflows = []}) => {
 
 
   return (
-    <div>
+    <div className="bg_color">
       <div className="firstNavDiv">
         <nav className="fixedNav">
           <div className="all_workflows">
