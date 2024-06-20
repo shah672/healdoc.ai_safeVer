@@ -87,7 +87,7 @@ const Sidebarz: React.FC<SidebarProps> = ({ onClose, onSelectItem }) => {
   return (
     <div className={styles.sidebar7}>
       <div className={styles.header7}>
-        <h1>Add Action</h1>
+        <h1  className={styles.add_action}>Add Action</h1>
         <div className={styles.actionButtons}>
           <button onClick={() => {}}><FontAwesomeIcon icon={faArrowUp} /></button>
           <button onClick={() => {}}><FontAwesomeIcon icon={faArrowDown} /></button>

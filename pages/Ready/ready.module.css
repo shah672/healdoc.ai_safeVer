@@ -506,6 +506,9 @@
     font-size: 18px;
     font-weight: 600;
   }
+  .add_action {
+    color: #000;
+  }
   
   .action-buttons button {
     margin-left: 10px;
