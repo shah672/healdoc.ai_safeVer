@@ -314,9 +314,13 @@
       font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-weight: 500;
       margin-left: 0.75rem;
+      color: #000;
     }
   
   
+    .inputBlackText {
+      color: black;
+    }
   
     .publish_button {
       margin-right: 12px;

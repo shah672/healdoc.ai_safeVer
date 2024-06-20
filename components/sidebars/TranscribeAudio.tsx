@@ -108,15 +108,17 @@ const maxSpeakerLabels = [
   '2',
   '3',
   '4',
-  '5'
+  '5', 
+  '6',
+  '7',
+  '8',
+  '9',
+  '10'
 ];
 
 const specialities = [
-  'Medical',
-  'Legal',
-  'Financial',
-  'Technical',
-  'General'
+  'General Medicine',
+  'Orthopedics specialities',
 ];
 
 const TranscribeAudio: React.FC<TranscribeAudioProps> = ({ onClose }) => {
@@ -166,7 +168,7 @@ const TranscribeAudio: React.FC<TranscribeAudioProps> = ({ onClose }) => {
                 type="text"
                 value={row.phrase}
                 onChange={(e) => handleInputChange(index, 'phrase', e.target.value)}
-                className="input"
+                className="input_option"
               />
             </div>
             <div className="tableCell">
@@ -174,7 +176,7 @@ const TranscribeAudio: React.FC<TranscribeAudioProps> = ({ onClose }) => {
                 type="text"
                 value={row.soundsLike}
                 onChange={(e) => handleInputChange(index, 'soundsLike', e.target.value)}
-                className="input"
+                className="input_option"
               />
             </div>
             <div className="tableCell">
@@ -182,7 +184,7 @@ const TranscribeAudio: React.FC<TranscribeAudioProps> = ({ onClose }) => {
                 type="text"
                 value={row.ipa}
                 onChange={(e) => handleInputChange(index, 'ipa', e.target.value)}
-                className="input"
+                className="input_option"
               />
             </div>
             <div className="tableCell">
@@ -190,7 +192,7 @@ const TranscribeAudio: React.FC<TranscribeAudioProps> = ({ onClose }) => {
                 type="text"
                 value={row.displayAs}
                 onChange={(e) => handleInputChange(index, 'displayAs', e.target.value)}
-                className="input"
+                className="input_option"
               />
             </div>
           </div>

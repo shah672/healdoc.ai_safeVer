@@ -409,6 +409,7 @@ const Ready = ( ) => {
                 id="workflowName"
                 value={workflowName}
                 onChange={(e) => setWorkflowName(e.target.value)}
+                className={styles.inputBlackText}
               />
             </div>
           
