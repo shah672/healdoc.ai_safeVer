@@ -1,4 +1,4 @@
-.dotted-background {
+.dottedBackground {
     background: rgb(247, 247, 247);
     background-image: radial-gradient(rgb(252, 210, 154) 2px, transparent 0);
     background-size: 40px 40px;
@@ -6,7 +6,7 @@
     min-height: 100vh;
   }
   
-  .nav-button-with-border {
+  .nav_button_with_border {
     border: 1px solid #969090; /* Add border */
     padding: 8px 12px; /* Add padding to adjust button size */
   }
@@ -82,8 +82,8 @@
   
   .fixedNav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 15px 20px;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -96,23 +96,25 @@
   }
   
   
-  .nav-section {
+  .nav_section {
     display: flex;
     align-items: center;
   }
   
-  .start-section {
+  .start_section {
     padding-left: 16rem;
     justify-content: flex-start;
     color: #eb9748;
     font-weight: 500;
   }
   
-  .middle-section {
+  .middle_section {
+    display: flex;
     justify-content: center;
+    padding-left: 15rem;
   }
   
-  .middle-section .nav-button {
+  .middle_section .nav_button {
    
     font-size: 16px; /* Font size of the text inside buttons */
     background-color: transparent; /* Transparent background */
@@ -123,7 +125,7 @@
   }
   
   
-  .nav-button {
+  .nav_button {
     padding: 0.5rem 0.5rem;
     background-color: transparent;
     border: none;
@@ -131,27 +133,28 @@
     transition: color 0.3s ease; /* Smooth transition for color change */
   }
   
-  .nav-button:hover {
+  .nav_button:hover {
     color: #fdaa69; /* Light orange color; adjust the hex code as needed */
     text-decoration: underline;
   }
   
   
-  .middle-section .nav-button:last-child {
+  .middle_section .nav_button:last-child {
     margin-right: 0; /* Removes margin from the last button */
   }
   
-  .end-section {
+  .end_section {
+    padding-left: 10rem;
     display: flex;
     color: #eb9748;
-    align-items: center;
+    align-items: flex-end;
   }
   
-  .credits-text {
+  .credits_text {
     margin-right: 0.3rem; /* Space before the icon */
   }
   
-  .icon-example {
+  .icon_example {
     display: inline-block;
     padding-bottom: 0.2rem;
     color: grey;
@@ -237,7 +240,7 @@
       cursor: pointer;
     }
   
-    .content-padding {
+    .content_padding {
       padding-left: 16%; /* General padding for larger screens */
       padding-top: 12%; /* General padding for larger screens */
       padding-bottom: 2%; /* General padding for larger screens */
@@ -306,15 +309,16 @@
    
     
   
-    .custom-heading3 {
+    .custom_heading3 {
       font-size: 15px;
       font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-weight: 500;
+      margin-left: 0.75rem;
     }
   
   
   
-    .publish-button {
+    .publish_button {
       margin-right: 12px;
       background-color: #f79d4e; /* Green */
       border: none;
@@ -332,11 +336,11 @@
     }
   
   
-    .publish-button:hover {
+    .publish_button:hover {
         background-color: #2d1c01; /* Darker green */
     }
   
-  .saveas-button {
+  .saveas_button {
     margin-right: 12px;
     background-color: #f79d4e; /* Green */
     border: none;
@@ -354,11 +358,11 @@
   
   }
   
-  .saveas-button:hover {
+  .saveas_button:hover {
     background-color: #2d1c01; /* Darker green */
   }
   
-  .workflows-css {
+  .workflows_css {
     display: flex;         /* Establishes this div as a flex container */
     flex-direction: column; /* Stacks child elements vertically */
     align-items: center;    /* Centers child elements horizontally in the container */
@@ -417,7 +421,7 @@
   
   
   
-  .content-padding button {
+  .content_padding button {
     font-family: inherit;
     font-size: 15px;
     background: #f79d4e;
@@ -432,38 +436,38 @@
     font-weight: 500;
   }
   
-  .content-padding button span {
+  .content_padding button span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
   }
   
-  .content-padding button svg {
+  .content_padding button svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
   }
   
-  .content-padding button:hover {
+  .content_padding button:hover {
     background: #fab273;
   }
   
-  .content-padding button:hover .svg-wrapper {
+  .content_padding button:hover .svg-wrapper {
     transform: scale(1.25);
     transition: 0.5s linear;
   }
   
-  .content-padding button:hover svg {
+  .content_padding button:hover svg {
     transform: translateX(1.2em) scale(1.1);
     fill: #fff;
   }
   
-  .content-padding button:hover span {
+  .content_padding button:hover span {
     opacity: 0;
     transition: 0.5s linear;
   }
   
-  .content-padding button:active {
+  .content_padding button:active {
     transform: scale(0.95);
   }
   
@@ -495,6 +499,7 @@
     align-items: center;
     background-color: #f8f9fa;
     border-bottom: 1px solid #ccc;
+    color: #000,
   }
   
   .header7 h1 {
@@ -567,9 +572,9 @@
     font-weight: bold;
   }
   
-  button {
+  /* button {
     cursor: pointer;
-  }
+  } */
   
   
   
@@ -582,19 +587,21 @@
     
   }
   
-  .workflows-css .boxz {
+  .workflows_css .boxz {
     position: relative;
     padding-right: 5px; /* Make space for the icons */
     transition: all 0.3s ease;
   }
   
-  .workflows-css .icon-container {
-    display: none;
+  .workflows_css .icon_container {
+    display:flex;
+    /* display: none; */
     position: absolute;
     transform: translateY(-50%);
+    /*flex space-x-1*/
   }
   
-  .workflows-css .icon-container {
+  .workflows_css .icon_container {
     right: -15%; /* Position icons outside the box */
     top: 50%;
     /* width: 60px; Adjust width if needed */
@@ -602,25 +609,26 @@
   }
   
   
-  .workflows-css .boxz:hover .icon-container {
+  .workflows_css .boxz:hover .icon_container {
     display: flex;
   }
   
-  .workflows-css .boxz:hover {
+  .workflows_css .boxz:hover {
     background-color: #f0f8ff; /* Slightly different background on hover */
   }
   
-  .workflows-css .icon-button:hover {
+  .workflows_css .workflow_icon_button:hover {
     color: #000;
   }
   
   .custom-heading3 {
     font-size: 18px;
     font-weight: 600;
+    margin-left: 0.75rem;
   }
  
   
-  .workflow-name-section {
+  .workflow_name_section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -633,7 +641,7 @@
     border: 1px solid #ccc;
   }
   
-  .workflow-name-section label {
+  .workflow_name_section label {
     font-size: 1.2em;
     margin-right: 10px;
     color: #333;
@@ -641,7 +649,7 @@
     flex-shrink: 0;
   }
   
-  .workflow-name-section input {
+  .workflow_name_section input {
     flex-grow: 1;
     padding: 10px;
     font-size: 1em;
@@ -651,7 +659,7 @@
     font-family: 'Arial', sans-serif;
   }
   
-  .workflow-name-section input:focus {
+  .workflow_name_section input:focus {
     border-color: #007BFF;
     outline: none;
   }
@@ -703,17 +711,17 @@
       display: flex;
     }
   
-    .publish-button {
+    .publish_button {
       font-size: 14px; /* Reduce font size */
     }
   
-    .content-padding {
+    .content_padding {
       padding-left: 35%; /* General padding for larger screens */
       padding-top: 20%; /* General padding for larger screens */
       padding-bottom: 2%; /* General padding for larger screens */
   }
   
-  .workflows-css {
+  .workflows_css {
     display: flex;         /* Establishes this div as a flex container */
     flex-direction: column; /* Stacks child elements vertically */
     padding-left: 35%;      /* Sets the left padding to 16% */
@@ -769,20 +777,20 @@
       justify-content: center;
     }
   
-    .publish-button {
+    .publish_button {
       font-size: 12px; /* Even smaller font size for smaller screens */
       padding: 5px; /* Less padding */
   
     }
   
-    .content-padding {
+    .content_padding {
       padding-left: 7%; /* General padding for larger screens */
       padding-top: 29%; /* General padding for larger screens */
       padding-bottom:4%; /* General padding for larger screens */
   }
   
   
-  .workflows-css {
+  .workflows_css {
     display: flex;         /* Establishes this div as a flex container */
     flex-direction: column; /* Stacks child elements vertically */
     align-items: center;    /* Centers child elements horizontally in the container */

@@ -33,6 +33,7 @@ import UpdateEHR from '../../components/sidebars/UpdateEHR';
 import Link from 'next/link';
 import useSessionData from '../../hooks/useSessionData';
 import AskAI from '../../components/sidebars/AskAI';
+import styles from './ready.module.css';
 // import 'tailwindcss/tailwind.css';
 
 // import { SessionProvider } from 'next-auth/react';
@@ -84,30 +85,30 @@ const Sidebarz: React.FC<SidebarProps> = ({ onClose, onSelectItem }) => {
   };
 
   return (
-    <div className="sidebar7">
-      <div className="header7">
+    <div className={styles.sidebar7}>
+      <div className={styles.header7}>
         <h1>Add Action</h1>
-        <div className="action-buttons">
+        <div className={styles.actionButtons}>
           <button onClick={() => {}}><FontAwesomeIcon icon={faArrowUp} /></button>
           <button onClick={() => {}}><FontAwesomeIcon icon={faArrowDown} /></button>
           <button onClick={onClose}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
       </div>
 
-      <div className="search-bar">
+      <div className={styles.searchBar}>
         <input type="text" placeholder="Search actions" />
         <button><FontAwesomeIcon icon={faSearch} /></button>
       </div>
 
-      <div className="content7">
-        <div className="categories7">
+      <div className={styles.content7}>
+        <div className={styles.categories7}>
           {Object.keys(categories).map((category) => (
-            <div key={category} className={category === selectedCategory ? "selected" : ""} onClick={() => setSelectedCategory(category)}>
+            <div key={category} className={category === selectedCategory ? styles.selected : ""} onClick={() => setSelectedCategory(category)}>
               {category}
             </div>
           ))}
         </div>
-        <div className="subitems7">
+        <div className={styles.subitems7}>
           {categories[selectedCategory].map((item) => (
             <div key={item} onClick={() => onSelectItem(item)}>
               {item}
@@ -321,51 +322,52 @@ const Ready = ( ) => {
   // if (status === "authenticated") 
 
     return (
-      <div className="dotted-background">
+      
+      <div className={styles.dottedBackground}>
         <div className="flex flex-col items-center relative">
-          
-            <div className="firstNavDiv">
-              <nav className="fixedNav">
-                  <div className="nav-section start-section">
-                    <button className="nav-button-with-border">Workflows / Call Summary</button>
+            <div className={styles.firstNavDiv}>
+              <nav className={styles.fixedNav}>
+                <div  className={styles.nav_section}>
+                  <div className={styles.start_section}>
+                    <button className={styles.nav_button_with_border}>Workflows / Call Summary</button>
                   </div>
 
-                  <div className="nav-section middle-section">
-                      <button className="nav-button">Build</button>
+                  <div className={styles.middle_section}>
+                      <button className={styles.nav_button}>Build</button>
                         <Link legacyBehavior href="./checkOutput/checkOutput">
-                          <a className="nav-button"> Run </a> 
+                          <a className={styles.nav_button}> Run </a> 
                         </Link>
                       {/* <button className="nav-button">Run</button> */}
-                      <button className="nav-button">Table</button>
-                      <button className="nav-button">API </button>
-                      <button className="nav-button">Form</button>
+                      <button className={styles.nav_button}>Table</button>
+                      <button className={styles.nav_button}>API </button>
+                      <button className={styles.nav_button}>Form</button>
                       {/* {session.isLoggedIn && <LogoutForm/>} */}
                   </div>
 
 
-                  <div className="nav-section end-section">
-                    <button className="nav-button-with-border">
-                        <span className="credits-text">Credits: Bonus Credits: 200</span>
-                        <CiCircleInfo size={20} className="icon-example" />
+                  <div className={styles.end_section}>
+                    <button className={styles.nav_button_with_border}>
+                        <span className={styles.credits_text}>Credits: Bonus Credits: 200</span>
+                        <CiCircleInfo size={20} className={styles.icon_example}/>
                     </button>
                   </div>
+                </div>
               </nav>
-
              </div>
 
 
              <div>
-               <nav className="secondNav">
+               <nav className={styles.secondNav}>
                    <Link legacyBehavior href="../ProviderForm/ProviderForm">
                      <a>
-                       <button className="publish-button">
+                       <button className={styles.publish_button}>
                            Publish
                        </button>
                      </a>
                    </Link>
               
 
-                   <button className="saveas-button" onClick={handleSave}>
+                   <button className={styles.saveas_button} onClick={handleSave}>
                        Quick Save
                    </button>
                </nav>
@@ -378,7 +380,7 @@ const Ready = ( ) => {
 
 
     
-            <div className="content-padding">
+            <div className={styles.content_padding}>
             {/* <button>
               <div className="svg-wrapper-1">
                 <div className="svg-wrapper">
@@ -400,7 +402,7 @@ const Ready = ( ) => {
 
             </button> */}
 
-            <div className="workflow-name-section">
+            <div className={styles.workflow_name_section}>
               <label htmlFor="workflowName">Workflow Name:</label>
               <input
                 type="text"
@@ -411,7 +413,7 @@ const Ready = ( ) => {
             </div>
           
             </div>
-            <div className="workflows-css">
+            <div className={styles.workflows_css}>
                 {elements.map((element, index) => (
                     <React.Fragment key={index}>
                         {element === '+' ? (
@@ -459,7 +461,7 @@ const Ready = ( ) => {
                                       onChange={handleEditChange}
                                       className="edit-input"
                                     />
-                                    <button onClick={handleEditSave} className="icon-button">
+                                    <button className={styles.workflow_icon_button} onClick={handleEditSave}>
                                       Save
                                     </button>
                                   </div>
@@ -467,18 +469,19 @@ const Ready = ( ) => {
 
                               <div className="flex items-center">
                                 {iconMap[element as keyof typeof iconMap] && (
-                                  <Image src={iconMap[element as keyof typeof iconMap]} alt={`${element} icon`} width={30} height={30} className="icon-size  ml-10" />
+                                  <Image src={iconMap[element as keyof typeof iconMap]} alt={`${element} icon`} width={30} height={30} className="icon-size ml-10" />
                                 )}
-                                <h2 className="custom-heading3 ml-3">{element}</h2>
+                                <h2 className={styles.custom_heading3}>{element}</h2>
                               </div>
                               )}
+                              
                           
                               {/* {hoveredBox === index && ( */}
-                                <div className="icon-container flex space-x-1">
-                                  <button className="icon-button" onClick={() => handleCopy(index)}>
+                                <div className={styles.icon_container}>
+                                  <button className={styles.workflow_icon_button} onClick={() => handleCopy(index)}>
                                     <FontAwesomeIcon icon={faCopy} />
                                   </button>
-                                  <button className="icon-button" onClick={() => handleDelete(index)}>
+                                  <button className={styles.workflow_icon_button} onClick={() => handleDelete(index)}>
                                     <FontAwesomeIcon icon={faTrashAlt} />
                                   </button>
                                 </div>
