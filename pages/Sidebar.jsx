@@ -48,7 +48,7 @@ export default function Sidebar({ children }) {
           `}
           >
             <div className="leading-4">
-              <h4 className="font-semibold">{sessions?.user?.name}</h4>
+              <h4 className="font-semibold text-black">{sessions?.user?.name}</h4>
               <span className="text-xs text-gray-600">{sessions?.user?.email}</span>
             </div>
             <MoreVertical size={20} />
@@ -137,12 +137,12 @@ export function SidebarLeft() {
             <span>Home</span>
           </li>
           <li>
-            <FaCommentDots className="mr-4" />
+            <FaCommentDots className="icon_colorz mr-4" />
             <span>Chat</span>
-            <FaRegPlusSquare className="ml-auto" />
+            <FaRegPlusSquare className="icon_colorz ml-auto" />
           </li>
           <li>
-            <FaProjectDiagram className="mr-4" />
+            <FaProjectDiagram className="icon_colorz mr-4" />
             <span>Projects</span>
           </li>
         </ul>
@@ -157,17 +157,17 @@ export function SidebarLeft() {
         <h3>Automation</h3>
         <ul>
           <li>
-            <FaStream className="mr-4" />
+            <FaStream className="icon_colorz mr-4" />
             <span>Workflows</span>
-            <FaRegPlusSquare className="ml-auto" />
+            <FaRegPlusSquare className="icon_colorz ml-auto" />
           </li>
           <li>
-            <FaBoxOpen className="mr-4" />
+            <FaBoxOpen className="icon_colorz mr-4" />
             <span>Operating Systems</span>
             <span className="badge new">NEW</span>
           </li>
           <li>
-            <FaInfoCircle className="mr-4" />
+            <FaInfoCircle className="icon_colorz mr-4" />
             <span>Workflow Library</span>
           </li>
         </ul>

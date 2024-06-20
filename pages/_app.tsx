@@ -3,7 +3,7 @@ import '../styles/DummyProto.css';
 import '../styles/Sidebar.css';
 import '../styles/TranscribeAudio.css';
 import '../styles/ComprehendFindings.css';
-import '../styles/workflowLoader.css'
+// import '../styles/workflowLoader.css'
 import '../styles/AskAI.css';
 
 

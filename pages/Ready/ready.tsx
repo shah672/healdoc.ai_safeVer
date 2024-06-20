@@ -87,18 +87,18 @@ const Sidebarz: React.FC<SidebarProps> = ({ onClose, onSelectItem }) => {
   return (
     <div className={styles.sidebar7}>
       <div className={styles.header7}>
-        <h1  className={styles.add_action}>Add Action</h1>
+        <h1  className={styles.add_action}>Add Actions</h1>
         <div className={styles.actionButtons}>
-          <button onClick={() => {}}><FontAwesomeIcon icon={faArrowUp} /></button>
-          <button onClick={() => {}}><FontAwesomeIcon icon={faArrowDown} /></button>
-          <button onClick={onClose}><FontAwesomeIcon icon={faTimes} /></button>
+          {/* <button className={styles.bar_icons} onClick={() => {}}><FontAwesomeIcon icon={faArrowUp} /></button>
+          <button className={styles.bar_icons} onClick={() => {}}><FontAwesomeIcon icon={faArrowDown} /></button> */}
+          <button className={styles.bar_icons} onClick={onClose}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
       </div>
 
-      <div className={styles.searchBar}>
+      {/* <div className={styles.searchBar}>
         <input type="text" placeholder="Search actions" />
-        <button><FontAwesomeIcon icon={faSearch} /></button>
-      </div>
+        <button className={styles.bar_icons}><FontAwesomeIcon icon={faSearch} /></button>
+      </div> */}
 
       <div className={styles.content7}>
         <div className={styles.categories7}>

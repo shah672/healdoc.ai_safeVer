@@ -49,6 +49,10 @@
     letter-spacing: 0.05em;
     margin-bottom: 2rem;
   }
+
+  .sidebar_open .section ul li span {
+    color: #4a5568;
+  }
   
   .sidebar_open .section ul {
     list-style: none;
