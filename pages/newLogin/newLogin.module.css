@@ -29,6 +29,11 @@
 	border-bottom-left-radius: 10px;
 	padding: 30px;
   }
+
+  .left h1 {
+	color: #333;
+	font-weight: bold;
+  }
   
   .form_container {
 	display: flex;
@@ -152,11 +157,30 @@
   }
   
   .password_container {
+	display: flex; /* Ensures both input and icon are in a row */
+	align-items: center; /* Vertically center items */
 	position: relative;
 	margin-bottom: 20px;
 	width: 100%;
 	max-width: 400px;
   }
+  
+  /* .inputaa {
+	flex: 1; 
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+  }
+   */
+  .eyeIcon {
+	position: absolute;
+	right: 10px; /* Adjust as needed */
+	cursor: pointer;
+	padding: 10px;
+	color: #666;
+  }
+  
   
   .show-password {
 	display: block;

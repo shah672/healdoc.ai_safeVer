@@ -109,7 +109,7 @@ const DummyProto = ({workflows = []}) => {
           <div className="nav-section end-section">
             <Link legacyBehavior href="../Ready/ready">
               <a><button className="button">
-                <span className="button-content"> All Workflows+ </span>
+                <span className="button-content"> + All Workflows </span>
               </button></a>
             </Link>
           </div>
@@ -125,8 +125,12 @@ const DummyProto = ({workflows = []}) => {
               Recent</button>
           </div>
           <div className="browse-container">
-            <button className="browseButton"><GoWorkflow style={{ marginRight: '8px' }} />
-              Browse Workflow Library</button>
+            <button className="browseButton">
+                <span className="browseButtonContent">
+                    <GoWorkflow className="icon" />
+                    Browse Workflow Library
+                </span>
+            </button>
           </div>
         </nav>
       </div>

@@ -6,98 +6,123 @@
 	height: 100vh;
 	background-color: #f0f4f8;
 	font-family: Arial, sans-serif;
+}
 
-  }
-  
-  .signupFormContainer {
+.signupFormContainer {
 	display: flex;
 	flex-direction: row;
 	background-color: #ffffff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	overflow: hidden;
-	width: 800px;
+	width: 500px;
 	margin: 20px;
-  }
-  
-  .left {
+}
+
+.left {
 	flex: 1;
-	background-color: #f7f9fc;
 	padding: 40px;
 	border-right: 1px solid #ddd;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #fabc66;
-  }
-  
-  .left h1 {
+}
+
+.left h1 {
 	font-size: 36px;
 	margin-bottom: 20px;
 	color: #333;
 	font-weight: bold;
-  }
-  
-  .right {
+}
+
+.right {
 	flex: 1;
 	padding: 40px;
-  }
-  
-  .right h1 {
+}
+
+.right h1 {
 	font-size: 24px;
 	margin-bottom: 20px;
 	color: #333;
 	font-weight: bold;
-  }
-  
-  .formContainer {
+	text-align: center; /* Center text horizontally */
+}
+
+.formContainer {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-  }
-  
-  .inputsign {
+	align-items: center; /* Center align the form items */
+}
+
+.inputsign {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 16px;
 	color: #000;
-  }
-  
-  .passwordContainer {
+}
+
+.passwordContainer {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-  }
-  
-  .passwordContainer label {
+	position: relative;
+	width: 100%; /* Ensure it takes full width */
+}
+
+.passwordContainer label {
 	font-size: 14px;
 	color: #666;
-  }
-  
-  .passwordContainer input[type="checkbox"] {
-	margin-right: 5px;
-  }
-  
-  .greenBtn {
+}
+
+.eyeIcon {
+	position: absolute;
+	right: 10px; /* Adjust as needed */
+	top: 50%; /* Align vertically center */
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #666;
+}
+
+.signin_btnz {
+	border: none;
+	outline: none;
+	padding: 8px 15px; /* Reduced padding */
+	border-radius: 5px;
+	background-color: #f0a118;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+	margin-top: 10px; /* Reduced margin-top */
+	width: auto; /* Make width auto to fit content */
+}
+
+.letstry {
+	color: orange;
+	background-color: #f0a118;
+}
+
+.greenBtn {
 	background-color: #e7a223;
 	color: white;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 16px;
-  }
-  
-  .greenBtn:hover {
+}
+
+.greenBtn:hover {
 	background-color: #ecb245;
-  }
-  
-  .errorMsg {
+}
+
+.errorMsg {
 	color: red;
 	font-size: 14px;
 	margin-top: 10px;
-  }
-  
+}

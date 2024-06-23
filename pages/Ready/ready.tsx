@@ -4,7 +4,7 @@ import {SidebarLeft} from '../Sidebar';
 import { CiCircleInfo } from "react-icons/ci";
 import Image, { StaticImageData } from 'next/image';
 type IconMapType = Record<string, StaticImageData>;
-import { faTrashAlt, faEdit, faCopy } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt, faEdit, faCopy, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 
 import smart2 from "../../public/sandclock_trial2.svg";
 import digital from "../../public/digital.svg";
@@ -34,6 +34,7 @@ import Link from 'next/link';
 import useSessionData from '../../hooks/useSessionData';
 import AskAI from '../../components/sidebars/AskAI';
 import styles from './ready.module.css';
+import router from 'next/router';
 // import 'tailwindcss/tailwind.css';
 
 // import { SessionProvider } from 'next-auth/react';
@@ -242,6 +243,49 @@ const Ready = ( ) => {
         };
 
 
+
+        const handleSaveNewCross = async () => {
+          const serializedState = savePage();  // Get the serialized state from savePage()
+      
+          const workflowDetails = {
+              name: workflowName,
+              owner: sessions?.user?.email,
+              lastModified: new Date().toISOString()
+          };
+      
+          const dataToSave = {
+              email: workflowDetails.owner,
+              state: serializedState,
+              workflowName: workflowDetails.name,
+              lastModified: workflowDetails.lastModified
+          };
+      
+          try {
+              const response = await fetch('/api/_actions/workflowSave', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(dataToSave)
+              });
+      
+              if (response.ok) {
+                  const jsonResponse = await response.json();
+                  console.log('Save successful:', jsonResponse);
+                  console.log('Saved ID:', jsonResponse.id);
+                  setLastModified(workflowDetails.lastModified);
+                  setShowWorkflowDetails(true);
+                  router.push('../DummyProto/DummyProto');  // Replace '/previousPage' with the actual route to the previous page
+              } else {
+                  throw new Error('Failed to save page state.');
+              }
+          } catch (error) {
+              console.error('Error saving page state:', error);
+              // Additional actions based on error (e.g., show error message)
+          }
+      };
+
+
     
     const handlePlusClick = (plusIndex: React.SetStateAction<number>) => {
             setShowDropdown(true);
@@ -329,7 +373,19 @@ const Ready = ( ) => {
               <nav className={styles.fixedNav}>
                 <div  className={styles.nav_section}>
                   <div className={styles.start_section}>
-                    <button className={styles.nav_button_with_border}>Workflows / Call Summary</button>
+                  <button className={styles.nav_button_with_border}>
+                    Workflows /
+                    <div className={styles.workflowNameContainer}>
+                      <input
+                        type="text"
+                        id="workflowName"
+                        value={workflowName}
+                        onChange={(e) => setWorkflowName(e.target.value)}
+                        className={styles.inputBlackText}
+                      />
+                      <FontAwesomeIcon icon={faPencilAlt} className={styles.editIcon} />
+                    </div>
+                  </button>
                   </div>
 
                   <div className={styles.middle_section}>
@@ -367,9 +423,19 @@ const Ready = ( ) => {
                    </Link>
               
 
-                   <button className={styles.saveas_button} onClick={handleSave}>
-                       Quick Save
+                   <button className={styles.saveas_button} onClick={handleSaveNewCross}>
+                      Save
                    </button>
+
+                   <button className={styles.saveas_button} onClick={handleSave}>
+                      Quick Save
+                   </button>
+
+                   <div className={styles.closeButtonContainer}>
+                    <button >
+                      <FontAwesomeIcon icon={faTimes} onClick={handleSaveNewCross} />
+                    </button>
+                  </div>
                </nav>
             </div> 
 
@@ -402,7 +468,7 @@ const Ready = ( ) => {
 
             </button> */}
 
-            <div className={styles.workflow_name_section}>
+            {/* <div className={styles.workflow_name_section}>
               <label htmlFor="workflowName">Workflow Name:</label>
               <input
                 type="text"
@@ -411,7 +477,7 @@ const Ready = ( ) => {
                 onChange={(e) => setWorkflowName(e.target.value)}
                 className={styles.inputBlackText}
               />
-            </div>
+            </div> */}
           
             </div>
             <div className={styles.workflows_css}>

@@ -6,10 +6,43 @@
     min-height: 100vh;
   }
   
-  .nav_button_with_border {
-    border: 1px solid #969090; /* Add border */
-    padding: 8px 12px; /* Add padding to adjust button size */
+  /* .nav_button_with_border {
+    border: 1px solid #969090; 
+    padding: 8px 12px; 
+  } */
+
+
+
+  
+  .workflowNameContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
   }
+  
+  .inputBlackText {
+    border: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    margin-right: 5px;
+  } 
+  
+  .editIcon {
+    margin-left: 5px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .editIcon:hover {
+    color: #333;
+  }
+  
+
+  
   
   
   .sidebarCss {
@@ -79,80 +112,108 @@
     height: 20%;
   }
   
-  
   .fixedNav {
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding */
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
-    height: 50x;
     top: 0;
-    left: 0; /* Adjust this value to match the width of your sidebar */
-    right: 0; /* Ensures the navbar stretches to the end of the viewport */
-    /* z-index: 10; */
-  }
-  
-  
-  .nav_section {
+    left: 255px; /* Adjust this value to match the width of your sidebar */
+    right: 0;
+    z-index: 10;
+    height: 80px; /* Adjust height if needed */
+}
+
+.nav_section {
     display: flex;
     align-items: center;
-  }
-  
-  .start_section {
-    padding-left: 16rem;
-    justify-content: flex-start;
+    width: 100%;
+}
+
+.start_section {
+    display: flex;
+    align-items: center;
     color: #eb9748;
     font-weight: 500;
-  }
-  
-  .middle_section {
+    margin-right: auto; /* Pushes middle_section to the center */
+}
+
+.middle_section {
     display: flex;
     justify-content: center;
-    padding-left: 15rem;
-  }
-  
-  .middle_section .nav_button {
-   
-    font-size: 16px; /* Font size of the text inside buttons */
-    background-color: transparent; /* Transparent background */
-    border: none; /* No border */
-    cursor: pointer; /* Cursor indicates button */
-    color: rgb(110, 109, 107);
-    font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  }
-  
-  
-  .nav_button {
-    padding: 0.5rem 0.5rem;
+    gap: 1rem; /* Keeps spacing between buttons consistent */
+    flex-grow: 1;
+}
+
+.end_section {
+    display: flex;
+    align-items: center;
+    color: #eb9748;
+    margin-left: auto; /* Aligns to the right */
+}
+
+.nav_button {
+    padding: 0.3rem 0.3rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition: color 0.3s ease; /* Smooth transition for color change */
-  }
-  
-  .nav_button:hover {
-    color: #fdaa69; /* Light orange color; adjust the hex code as needed */
+    font-size: 16px;
+    color: rgb(110, 109, 107);
+    font-family: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav_button:hover {
+    color: #fdaa69; /* Light orange color */
     text-decoration: underline;
-  }
-  
-  
-  .middle_section .nav_button:last-child {
-    margin-right: 0; /* Removes margin from the last button */
-  }
-  
-  .end_section {
-    padding-left: 10rem;
+}
+
+.nav_button_with_border {
+    border: 1px solid #969090; /* Add border */
+    padding: 5px 10px; /* Reduced padding */
     display: flex;
-    color: #eb9748;
-    align-items: flex-end;
-  }
-  
-  .credits_text {
-    margin-right: 0.3rem; /* Space before the icon */
-  }
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Adjust font size */
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.workflowNameContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust spacing between input and icon */
+}
+
+.inputBlackText {
+    border: none;
+    border: 1px solid #333;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+.editIcon {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.editIcon:hover {
+    color: #333;
+}
+
+.credits_text {
+    font-size: 18px;
+}
+
   
   .icon_example {
     display: inline-block;
@@ -316,6 +377,13 @@
       margin-left: 0.75rem;
       color: #000;
     }
+
+    .closeButtonContainer {
+      position: absolute;
+      right: 0.5rem;
+      color: black;
+    }
+
   
   
     .inputBlackText {

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
  import styles from "./newLogin.module.css";
+ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
   const [error, setError] = useState<string>("");
@@ -64,12 +65,12 @@ const Login = () => {
                 required
                 className={styles.inputaa}
               />
-              <input
-                type="checkbox"
-                id="show_password"
-                onChange={() => setShowPassword(!showPassword)}
-              />
-              <label htmlFor="show_password">Show password</label>
+               <span
+                  className={styles.eyeIcon}
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEye /> : <FaEyeSlash />}
+                </span>
             </div>
             
             {error && <div className={styles.input}>{error}</div>}
@@ -80,7 +81,7 @@ const Login = () => {
         </div>
         <div className={styles.rightyea}>
           <h1>New Here?</h1>
-          <p className={styles.subtitle}>Create an account to get started</p>
+          {/* <p className={styles.subtitle}>Create an account to get started</p> */}
           <Link href="../SignUp/signup">
             <button className={styles.white_btn}>Sign Up</button>
           </Link>

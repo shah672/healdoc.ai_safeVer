@@ -107,6 +107,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from './signup.module.css'; // Import your CSS module
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
+
 
 
 const Signup = () => {
@@ -151,12 +154,9 @@ const Signup = () => {
   return (
     <div className={styles.signupContainer}>
       <div className={styles.signupFormContainer}>
-        <div className={styles.left}>
-          <h1>Welcome Back</h1>
-        </div>
         <div className={styles.right}>
           <form className={styles.formContainer} onSubmit={handleSubmit}>
-            <h1>Create Account</h1>
+            <h1 className={styles.createStyle}>Create Account</h1>
             <input
               type="text"
               placeholder="Name"
@@ -185,21 +185,23 @@ const Signup = () => {
                 required
                 className={styles.inputsign}
               />
-              <input
-                type="checkbox"
-                id="show_password"
-                onChange={() => setShowPassword(!showPassword)}
-              />
-              <label htmlFor="show_password">Show password</label>
+              <span
+                className={styles.eyeIcon}
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <FaEye /> : <FaEyeSlash />}
+              </span>
             </div>
+    
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            <button type="submit" className={styles.greenBtn}>
+            <button type="submit" className={styles.signin_btnz}>
               Sign Up
             </button>
           </form>
         </div>
       </div>
-    </div>
+  </div>
+  
   );
 };
 
